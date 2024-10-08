@@ -1,3 +1,28 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Design Tokens */
+@font-face {
+  font-family: 'lexend-regular';
+  src: url('font/Lexend-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'lexend-bold';
+  src: url('font/Lexend-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'lexend-medium';
+  src: url('font/Lexend-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'lexend-black';
+  src: url('font/Lexend-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'DMserif';
+  src: url('font/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
