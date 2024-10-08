@@ -71,6 +71,7 @@ header {
   margin: auto;
   padding: 20px 100px;
   background-color: #5B33B2;
+  border-bottom: 1px solid darkblue;
 }
 
 .home {
@@ -98,7 +99,7 @@ header img{
 main {
   max-width: 1200px;
   margin: 120px auto;
-  padding-top: 100px;
+  padding-top: 54px;
 }
 
 /* hero section */
@@ -111,14 +112,13 @@ main {
 }
 .hero-left p {
   margin-bottom: 44px;
-  width: 80%;
+  max-width: 80%;
 }
 .hero-left {
-  padding-top: 40px
+  padding-top: 80px
 }
 .hero-right img {
-  width: 400px;
-  border-radius: 20px;
+  width: 480px;
 }
 .CTA a {
   display: inline-block;
