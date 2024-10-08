@@ -32,7 +32,7 @@ body {
 p {
   font-family: lexend-regular;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 140%;
   color: #2F1D5A;
 }
 h1 {
@@ -55,7 +55,7 @@ h3 {
 }
 a {
   font-family: lexend-medium;
-  font-size: 20px;
+  font-size: 18px;
   color: #2F1D5A;
   text-decoration: none;
 }
@@ -71,6 +71,10 @@ header {
   margin: auto;
   padding: 24px 100px;
   background-color: #5B33B2;
+}
+
+.home {
+  color: #FD69B4 !important;
 }
 header img{
   width: 100px;
@@ -92,14 +96,14 @@ main {
 /* hero section */
 .hero-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin: auto;
 
 }
 .hero-left p {
-  margin-bottom: 32px;
-  width: 90%;
+  margin-bottom: 44px;
+  width: 80%;
 }
 .hero-left {
   padding-top: 40px
@@ -110,7 +114,7 @@ main {
 }
 .CTA a {
   display: inline-block;
-  background-color: #6D35DE;
+  background: linear-gradient(90deg, #6e26fe, #fd3582);
   color: #FEFEFE;
   padding: 14px 40px;
   border-radius: 8px;
@@ -159,27 +163,20 @@ main {
 /* footer section */
 footer {
   display: flex;
-  flex-direction: column;
-  background-color: #5B33B2;
-  padding: 40px 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 80px 40px 80px;
+  border-top: 0.5px solid #828BA0;
 }
 
 footer h3 {
-  color: #FD69B4;
-  font-size: 38px;
-  margin-bottom: 14px;
+  font-family: DMserif;
+  font-size: 32px;
+  padding: 24px 0px;
+  color: #5B33B2;
 }
 
-.contactList a {
-  color: #FEFEFE;
-  font-family: lexend-regular;
-  font-size: 24px;
-  margin-right: 8px;
-}
-
-.copyright p{
-  color: #b672ff;
-  text-align: center;
-  font-size: 14px;
-  margin-top: 16px;
+.footer-right i {
+  font-size: 32px;
+  margin-right: 12px;;
 }
