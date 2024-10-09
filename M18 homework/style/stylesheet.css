@@ -103,7 +103,6 @@ header img{
 }
 
 
-
 /*main*/
 main {
   max-width: 1200px;
@@ -115,19 +114,18 @@ main {
 .hero-container {
   display: flex;
   justify-content: center;
-  width: 100%;
+  max-width: 100%;
   margin: auto;
 
 }
 .hero-left p {
   margin-bottom: 44px;
-  max-width: 80%;
 }
 .hero-left {
   padding-top: 80px
 }
 .hero-right img {
-  width: 480px;
+  max-width: 480px;
 }
 .CTA a {
   display: inline-block;
@@ -279,3 +277,51 @@ footer h3 {
     transform: none;
   }
 }
+
+/*About Section*/
+.about-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  'about-left about-right';
+  gap: 40px;
+}
+
+.about-section img {
+  width: 100%;
+}
+
+.about-left {
+  grid-area: about-left;
+  bottom: 60px;
+}
+.about-right {
+  grid-area: about-right;
+}
+
+.funfact-section {
+
+  margin-top: 80px;
+}
+
+.funfact-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.funfact-item {
+  display: flex;
+  align-items: center;
+}
+
+.funfact-item img {
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 12px;
+}
+
