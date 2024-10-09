@@ -68,46 +68,53 @@ a {
 
 /* header section */
 header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   position: fixed;
   top: 0;
-  width: 100%;
-  align-items: center;
-  margin: auto;
-  padding: 8px 200px;
-  background-color: #5B33B2;
-  border-bottom: 1px solid darkblue;
+  left: 0;
   z-index: 100;
+  grid-template: auto / 1fr 1fr;
+  grid-template-areas: 
+   'logo primary-header';
+  justify-content: center;
+  background-color: #6e26fe;
+  padding: 8px 200px;
+  align-items: center;
+  width: 100%;
 }
 
-
-header img{
-  width: 80px;
-  padding: 8px 0;
+header img {
+  height: 52px;
+  margin-right: 40px;
 }
-
+.primary-header {
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr);
+  grid-template-areas: 
+  'Home Work About DesignLab';
+  justify-content: end;
+  gap: 18px;
+}
 .primary-header a {
-  margin: 20px;
-  padding: 10px 20px;
-  border-radius: 8px;
   color: #FEFEFE;
-  transition: color 0.3s ease, background-color 0.1s ease;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
-.primary-header a:hover {
-  color:#FD69B4;
 
+.primary-header a:hover {
+  color: #ff72a8
 }
 .primary-header a:active {
-  background-color: #37177c;
+  background-color: #2F1D5A;
 }
-
 
 /*main*/
 main {
   max-width: 1200px;
   margin: 120px auto;
-  padding-top: 54px;
+  padding-top: 42px;
 }
 
 /* hero section */
@@ -154,9 +161,10 @@ main {
   color: #828BA0;
 }
 
+
 /* feature work section */
 .featureWork-section {
-  margin: 40px 0;
+  margin: 32px 0;
 }
 
 .secondary-header {
@@ -205,6 +213,9 @@ main {
 .featureWork-item h3 {
   margin-bottom: 8px;
 }
+
+
+
 
 /* footer section */
 footer {
@@ -265,18 +276,6 @@ footer h3 {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1024px) {
-  .work-container {
-    grid-template-columns: 1fr;
-  }
-  .work-section {
-    margin: 120px 52px;
-  }
-
-  .work-item:hover {
-    transform: none;
-  }
-}
 
 /*About Section*/
 .about-section {
@@ -302,7 +301,6 @@ footer h3 {
 }
 
 .funfact-section {
-
   margin-top: 80px;
 }
 
@@ -325,3 +323,70 @@ footer h3 {
   border-radius: 12px;
 }
 
+/*reponsive attempts*/
+@media (max-width: 1024px) {
+  .work-container {
+    grid-template-columns: 1fr;
+  }
+  .work-section {
+    margin: 120px 52px;
+  }
+
+  .work-item:hover {
+    transform: none;
+  }
+  .featureWork-section {
+    margin-top: auto;
+  }
+  .featureWork-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .secondary-header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+  }
+  main {
+    margin: 20px;
+  }
+  .hero-right, .CTA{
+    display: none;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+  }
+.about-section {
+  display: block;
+  margin: 68px 16px;
+  width: 100%;
+}
+.about-right img {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+}
+.funfact-section {
+  margin: 0 16px;
+}
+.funfact-item {
+  display: block;
+}
+.funfact-item img {
+  margin-bottom: 14px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px;
+}
+.contactIcons {
+  margin: 12px 0;
+}
+}
