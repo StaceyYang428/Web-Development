@@ -230,3 +230,54 @@ footer h3 {
   font-size: 32px;
   margin-right: 12px;;
 }
+
+
+/* Work section */
+.work-section {
+  margin: 120px 320px;
+}
+
+.work-section .secondary-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+
+}
+
+.work-item {
+  border: 2px solid #2F1D5A;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+  background: #fdfbff;
+}
+
+.work-item:hover {
+  transform: scale(1.06);
+}
+
+.work-item img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .work-container {
+    grid-template-columns: 1fr;
+  }
+  .work-section {
+    margin: 120px 52px;
+  }
+
+  .work-item:hover {
+    transform: none;
+  }
+}
