@@ -78,7 +78,7 @@ header {
    'logo primary-header';
   justify-content: center;
   background-color: #6e26fe;
-  padding: 8px 200px;
+  padding: 12px 200px;
   align-items: center;
   width: 100%;
 }
@@ -93,6 +93,7 @@ header img {
   grid-template-areas: 
   'Home Work About DesignLab';
   justify-content: end;
+  align-items: center;;
   gap: 18px;
 }
 .primary-header a {
@@ -279,17 +280,19 @@ footer h3 {
 
 /*About Section*/
 .about-section {
+  width: 80%;
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.5fr;
   grid-template-areas: 
   'about-left about-right';
   gap: 40px;
+  margin: auto;
 }
 
 .about-section img {
-  width: 100%;
+  width: 320px;
 }
 
 .about-left {
@@ -300,36 +303,50 @@ footer h3 {
   grid-area: about-right;
 }
 
-.funfact-section {
-  margin-top: 80px;
-}
 
-.funfact-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  padding-top: 20px;
-}
+/* skill section */
 
-.funfact-item {
+.skill-section {
+  margin-top: 140px;
+}
+.skill-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  text-align: center;
   align-items: center;
+
 }
 
-.funfact-item img {
-  width: 100%;
-  margin-right: 20px;
+.skill-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.skill-item {
+  border: 2px solid rgb(219, 220, 220);
+  padding: 24px;
+  width: 320px;
+  background-color: rgb(249, 250, 255);
   border-radius: 12px;
 }
+.skill-section h2 {
+  text-align: center;
+  margin: 40px auto;
+}
 
-/*reponsive attempts*/
+
+
+
 @media (max-width: 1024px) {
   .work-container {
     grid-template-columns: 1fr;
   }
   .work-section {
-    margin: 120px 52px;
+    margin: 120px 20px;
   }
 
   .work-item:hover {
@@ -341,7 +358,9 @@ footer h3 {
   .featureWork-container {
     grid-template-columns: 1fr; 
   }
-
+  .featureWork-item:hover {
+    transform: none;
+  }
   .secondary-header {
     display: flex;
     flex-direction: column;
@@ -371,15 +390,7 @@ footer h3 {
   width: 80%;
   margin: 20px auto;
 }
-.funfact-section {
-  margin: 0 16px;
-}
-.funfact-item {
-  display: block;
-}
-.funfact-item img {
-  margin-bottom: 14px;
-}
+
 footer {
   display: flex;
   flex-direction: column;
